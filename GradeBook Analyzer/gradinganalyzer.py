@@ -4,7 +4,7 @@ import sys
 # --- Helper Function: Shows a pretty menu ---
 def show_welcome_message():
     print("\n" + "="*50)
-    print("      STUDENT PERFORMANCE ANALYZER (v2.0)      ")
+    print("      STUDENT PERFORMANCE ANALYZER       ")
     print("="*50)
     print("Welcome! Please select an operation below:\n")
     print("   [1] Start a New Class List (Type names manually)")
@@ -149,4 +149,5 @@ def main():
             print("\n[!] Invalid selection. Please try again.")
 
 if __name__ == "__main__":
+
     main()
