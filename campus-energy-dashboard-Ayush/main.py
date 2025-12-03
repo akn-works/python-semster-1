@@ -1,10 +1,10 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# ==========================================
+
 # MODULE 1: CLASSES (Object Oriented Part)
 # Purpose: Define what a "Building" looks like
-# ==========================================
+
 class MeterReading:
     def __init__(self, date, kwh):
         self.date = date
@@ -19,10 +19,10 @@ class Building:
         new_reading = MeterReading(date, kwh)
         self.readings.append(new_reading)
 
-# ==========================================
+
 # MODULE 2: DATA INGESTION
 # Purpose: Read CSV files and clean them
-# ==========================================
+
 def load_data(file_list):
     print("...Loading Data...")
     all_data = [] # Empty list to store our tables
@@ -52,10 +52,10 @@ def load_data(file_list):
     
     return combined_df
 
-# ==========================================
+
 # MODULE 3: ANALYSIS
 # Purpose: Calculate the math and stats
-# ==========================================
+
 def calculate_stats(df):
     print("...Calculating Stats...")
     
@@ -67,10 +67,10 @@ def calculate_stats(df):
     
     return daily_totals, b_summary
 
-# ==========================================
+
 # MODULE 4: VISUALIZATION
 # Purpose: Draw the charts
-# ==========================================
+
 def create_charts(df, daily_data, building_summary):
     print("...Drawing Charts...")
     
@@ -101,10 +101,10 @@ def create_charts(df, daily_data, building_summary):
     plt.savefig('dashboard_modular.png')
     print("Chart saved as 'dashboard_modular.png'")
 
-# ==========================================
+
 # MODULE 5: REPORTING
 # Purpose: Save the final text and CSVs
-# ==========================================
+
 def generate_report(df, building_summary):
     print("...Generating Report...")
     
@@ -130,15 +130,15 @@ def generate_report(df, building_summary):
     
     print(summary_text)
 
-# ==========================================
+
 # MAIN EXECUTION
 # This is where we run the modules in order
-# ==========================================
+
 
 # 1. Define our files
 my_files = ['library_block.csv', 'science_block.csv']
 
-# 2. Call the modules
+
 final_df = load_data(my_files)
 
 if not final_df.empty:
