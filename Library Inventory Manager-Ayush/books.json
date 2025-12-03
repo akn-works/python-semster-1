@@ -1,0 +1,20 @@
+[
+    {
+        "title": "science",
+        "author": "abc",
+        "isbn": "123",
+        "status": "available"
+    },
+    {
+        "title": "python 01",
+        "author": "abcd",
+        "isbn": "147",
+        "status": "available"
+    },
+    {
+        "title": "webdev",
+        "author": "poi",
+        "isbn": "582",
+        "status": "available"
+    }
+]
